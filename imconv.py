@@ -11,7 +11,7 @@ def convertImage(path,fm,dest):
     nim.save("{}/{}.{}".format(dest,name,fm))
 def selectFile(en):
     en.delete(0,'end')
-    filename=filedialog.askopenfilename(initialdir="C:\\Users\\S_H_D\\Desktop",
+    filename=filedialog.askopenfilename(initialdir="C:\\Users\\{Your USERNAME}\\Desktop",
                                         title="Select an Image",
                                         filetypes=(("JPEG files", 
                                                         "*.jpeg*"), 
@@ -41,7 +41,7 @@ iDestination.pack()
 
 
 idEntry=Entry(root,width=50)
-idEntry.insert(END,"C:/Users/S_H_D/Desktop/")
+idEntry.insert(END,"C:/Users/{your USERNAME}/Desktop/")
 idEntry.pack()
 
 sButton=Button(root,text="Select Folder",command=lambda:selectFolder(idEntry))
